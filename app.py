@@ -11,7 +11,6 @@ model = pickle.load(open('rf_model.pkl', 'rb'))
 def Home():
     return render_template('index.html')
 
-
 standard_to = StandardScaler()
 @app.route("/predict", methods=['POST'])
 def predict():
